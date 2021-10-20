@@ -5,7 +5,7 @@ prtLRed_Black () {
       return
   fi
   
-  printf "\e[91m\e[40m$1"
+  printf "\e[91m\e[40m$1\e[0m"
 }
 
 prtGreen_Black () {
@@ -15,7 +15,7 @@ prtGreen_Black () {
       return
   fi
 
-  printf "\e[32m\e[40m$1"
+  printf "\e[32m\e[40m$1\e[0m"
 }
 
 prtLGreen_Black () {
@@ -25,7 +25,7 @@ prtLGreen_Black () {
       return
   fi
 
-  printf "\e[92m\e[40m$1"
+  printf "\e[92m\e[40m$1\e[0m"
 }
 
 prtLYellow_Black () {
@@ -35,5 +35,5 @@ prtLYellow_Black () {
       return
   fi
 
-  printf "\e[93m\e[40m$1"
+  printf "\e[93m\e[40m$1\e[0m"
 }
