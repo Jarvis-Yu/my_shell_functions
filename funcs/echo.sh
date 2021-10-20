@@ -1,27 +1,29 @@
-echLRed_Black () {
+# echo related functions
+
+echlred_black () {
   if [ $# -ne 1 ]
     then
-      echo -e "[!] echLRed_Black is called but with argc != 1\n"
+      echo -e "[!] echlred_black is called but with argc != 1\n"
       return
   fi
   
   echo -e "\e[91m\e[40m$1"
 }
 
-echLGreen_Black () {
+echlgreen_black () {
   if [ $# -ne 1 ]
     then
-      echo -e "[!] echLGreen_Black is called but with argc != 1\n"
+      echo -e "[!] echlgreen_black is called but with argc != 1\n"
       return
   fi
 
   echo -e "\e[92m\e[40m$1"
 }
 
-echLYellow_Black () {
+echlyellow_black () {
   if [ $# -ne 1 ]
     then
-      echo -e "[!] echLYellow_Black is called but with argc != 1\n"
+      echo -e "[!] echlyellow_black is called but with argc != 1\n"
       return
   fi
 

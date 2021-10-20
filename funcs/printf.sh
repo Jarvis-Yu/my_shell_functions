@@ -1,37 +1,39 @@
-prtLRed_Black () {
+# printf related functions
+
+prtlred_black () {
   if [ $# -ne 1 ]
     then
-      printf "[!] prtLRed_Black is called but with argc != 1\n"
+      printf "[!] prtlred_black is called but with argc != 1\n"
       return
   fi
   
   printf "\e[91m\e[40m$1\e[0m"
 }
 
-prtGreen_Black () {
+prtgreen_black () {
   if [ $# -ne 1 ]
     then
-      printf "[!] prtGreen_Black is called but with argc != 1\n"
+      printf "[!] prtgreen_black is called but with argc != 1\n"
       return
   fi
 
   printf "\e[32m\e[40m$1\e[0m"
 }
 
-prtLGreen_Black () {
+prtlgreen_black () {
   if [ $# -ne 1 ]
     then
-      printf "[!] prtLGreen_Black is called but with argc != 1\n"
+      printf "[!] prtlgreen_black is called but with argc != 1\n"
       return
   fi
 
   printf "\e[92m\e[40m$1\e[0m"
 }
 
-prtLYellow_Black () {
+prtlyellow_black () {
   if [ $# -ne 1 ]
     then
-      printf "[!] prtLYellow_Black is called but with argc != 1\n"
+      printf "[!] prtlyellow_black is called but with argc != 1\n"
       return
   fi
 
