@@ -22,6 +22,8 @@ gitac () {
   
   echo "> git add ."
   git add .
+  echo "> git status"
+  git status
   echo -n "> git commit -m \"$1\""; read
   git commit -m "$1"
 }
