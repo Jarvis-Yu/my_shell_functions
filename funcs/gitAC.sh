@@ -8,14 +8,14 @@ gitAC () {
 
   if [ $# -gt 1 ]
     then
-      ptrLRed_Black "[!] argc should not be greater than 1\n"
+      prtLRed_Black "[!] argc should not be greater than 1\n"
       _gitACExample
       return
   fi 
 
   if [ ! $1 ]
     then
-      echo "[@] empty commit message is not recommanded"
+      prtLYellow_Black "[@] empty commit message is not recommanded\n"
   fi
   
   echo "> git add ."
@@ -25,6 +25,6 @@ gitAC () {
 }
 
 _gitACExample () {
-  printf "\e[92mExample:\n"
-  printf "\e[32m> gitAC \"this is my commit\"\n"
+  prtGreen_Black "Example:\n"
+  prtGreen_Black "> gitAC \"this is my commit\"\n"
 }
