@@ -6,4 +6,5 @@ source "./funcs/gitcoftche.sh"
 source "./funcs/printf.sh"
 source "./funcs/echo.sh"
 source "./funcs/srczsh.sh"
+source "./funcs/srcbsh.sh"
 cd ${LAST_PATH}
