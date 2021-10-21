@@ -10,7 +10,7 @@ dum_status () {
   do
     for i in {1..15}
     do
-      _type_what_is_doing $1
+      _type_what_is_doing "$1"
     done
     _type_clear
     clear
@@ -55,6 +55,6 @@ _type_what_is_doing () {
 }
 
 _prints () {
-  printf $2
+  printf "$2"
   sleep $1
 }
