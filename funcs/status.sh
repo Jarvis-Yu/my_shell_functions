@@ -4,6 +4,8 @@ dum_status () {
     return
   fi
 
+  clear
+
   while [ 1 -eq 1 ]
   do
     printf "jarvis_yu@Jarvis-Yus-MacBook-Pro ~ %% "
