@@ -3,21 +3,23 @@
 gitac () {
   if [ $# -lt 1 ]
     then
-      prtlred_black "[!] argv[1] is supposed to be the commit message\n"
+      prtlred "[!] argv[1] is supposed to be the commit message\n"
       _gitacExample
       return
   fi
 
   if [ $# -gt 1 ]
     then
-      prtlred_black "[!] argc should not be greater than 1\n"
+      prtlred "[!] argc should not be greater than 1\n"
       _gitacExample
       return
   fi 
 
   if [ ! $1 ]
     then
-      prtlyellow_black "[@] empty commit message is not recommanded\n"
+      prtlyellow "[!] empty commit message is not recommanded, "
+      prtlyellow     "please ctrl+c to interrupt and rename "
+      prtlyellow     "your commit message\n"
   fi
   
   echo "> git add ."
@@ -29,6 +31,6 @@ gitac () {
 }
 
 _gitacExample () {
-  prtgreen_black "Example:\n"
-  prtgreen_black "> gitac \"this is my commit\"\n"
+  prtlgreen "[*] Example:\n"
+  prtlgreen "[*] > gitac \"this is my commit\"\n"
 }
