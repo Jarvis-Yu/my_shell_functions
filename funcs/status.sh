@@ -18,73 +18,43 @@ dum_status () {
 }
 
 _type_clear () {
-  printf "jarvis_yu@Jarvis-Yus-MacBook-Pro ~ %% "
-  sleep 2
-  printf "c"
-  sleep 0.05
-  printf "l"
-  sleep 0.05
-  printf "e"
-  sleep 0.05
-  printf "a"
-  sleep 0.05
-  printf "r"
-  sleep 0.5
-  printf "\n"
-  sleep 0.02
+  _prints 2.00 "jarvis_yu@Jarvis-Yus-MacBook-Pro ~ %% "
+  _prints 0.05 "c"
+  _prints 0.05 "l"
+  _prints 0.05 "e"
+  _prints 0.05 "a"
+  _prints 0.50 "r"
+  _prints 0.02 "\n"
 }
 
 _type_what_is_doing () {
-  printf "jarvis_yu@Jarvis-Yus-MacBook-Pro ~ %% "
-  sleep 3
-  printf "W"
-  sleep 0.05
-  printf "h"
-  sleep 0.05
-  printf "a"
-  sleep 0.05
-  printf "t"
-  sleep 0.05
-  printf " "
-  sleep 0.1
-  printf "i"
-  sleep 0.05
-  printf "s"
-  sleep 0.05
-  printf " "
-  sleep 0.3
-  printf "J"
-  sleep 0.05
-  printf "a"
-  sleep 0.05
-  printf "r"
-  sleep 0.05
-  printf "v"
-  sleep 0.05
-  printf "i"
-  sleep 0.05
-  printf "s"
-  sleep 0.05
-  printf " "
-  sleep 0.1
-  printf "d"
-  sleep 0.05
-  printf "o"
-  sleep 0.05
-  printf "i"
-  sleep 0.05
-  printf "n"
-  sleep 0.05
-  printf "g"
-  sleep 0.05
-  printf "?"
-  sleep 0.5
-  printf "\n"
-  printf "$1\n"
-  sleep 0.02
+  _prints 3.00 "jarvis_yu@Jarvis-Yus-MacBook-Pro ~ %% "
+  _prints 0.05 "W"
+  _prints 0.05 "h"
+  _prints 0.05 "a"
+  _prints 0.05 "t"
+  _prints 0.10 " "
+  _prints 0.05 "i"
+  _prints 0.05 "s"
+  _prints 0.30 " "
+  _prints 0.05 "J"
+  _prints 0.05 "a"
+  _prints 0.05 "r"
+  _prints 0.05 "v"
+  _prints 0.05 "i"
+  _prints 0.05 "s"
+  _prints 0.10 " "
+  _prints 0.05 "d"
+  _prints 0.05 "o"
+  _prints 0.05 "i"
+  _prints 0.05 "n"
+  _prints 0.05 "g"
+  _prints 0.05 "?"
+  _prints 0.00 "\n"
+  _prints 0.02 "$1\n"
 }
 
 _prints () {
-  printf $1
-  sleep $2
+  printf $2
+  sleep $1
 }
