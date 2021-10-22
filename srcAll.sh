@@ -9,4 +9,7 @@ source "./funcs/echo.sh"
 source "./funcs/srczsh.sh"
 source "./funcs/srcbsh.sh"
 source "./funcs/status.sh"
+
+source "./funcs/pintos/gdb_pintos.sh"
+
 cd ${LAST_PATH}
