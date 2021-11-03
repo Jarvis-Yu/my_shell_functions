@@ -16,6 +16,6 @@ done
 # source "./funcs/srcbsh.sh"
 # source "./funcs/status.sh"
 
-source "./funcs/pintos/gdb_pintos.sh"
+# source "./funcs/pintos/gdb_pintos.sh"
 
 cd ${LAST_PATH}
