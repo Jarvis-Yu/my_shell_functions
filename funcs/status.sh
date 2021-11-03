@@ -18,7 +18,7 @@ dum_status () {
 }
 
 _type_clear () {
-  _prints 2.00 "jarvis_yu@Jarvis-Yus-MacBook-Pro ~ %% "
+  _prints 2.00 "jarvis_yu ~ %% "
   _prints 0.05 "c"
   _prints 0.05 "l"
   _prints 0.05 "e"
@@ -28,7 +28,7 @@ _type_clear () {
 }
 
 _type_what_is_doing () {
-  _prints 3.00 "jarvis_yu@Jarvis-Yus-MacBook-Pro ~ %% "
+  _prints 3.00 "jarvis_yu ~ %% "
   _prints 0.05 "W"
   _prints 0.05 "h"
   _prints 0.05 "a"
