@@ -2,7 +2,7 @@ rcd () {
   echo `pwd` > ~/.currWorkDir
   if [ -f ~/.scdWaiting ]; then
     pid=`cat ~/.scdWaiting`
-    rm ~/.scdWaiting
+    rm -f ~/.scdWaiting
     kill $pid
   fi
 }
