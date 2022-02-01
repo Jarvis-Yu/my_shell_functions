@@ -1,6 +1,10 @@
 rcd () {
   echo `pwd` > ~/.currWorkDir
-  touch ~/.currWorkDirUpdate
+  if [ -f ~/.scdWaiting ]; then
+    pid=`cat ~/.scdWaiting`
+    rm ~/.scdWaiting
+    kill $pid
+  fi
 }
 
 # alias cd="tmpfunc(){ source cd $1; echo `pwd` > ~/.currWorkDir; unset -f tmpfunc; }; tmpfunc"
