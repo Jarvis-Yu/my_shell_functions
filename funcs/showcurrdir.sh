@@ -6,7 +6,7 @@ scd () {
     if [ ! -f "~/.currWorkDir" ]; then
       currDir=`cat ~/.currWorkDir`
     fi
-    echo $currDir
+#    echo $currDir
     trl 1 $currDir
     sleep 2
   done
