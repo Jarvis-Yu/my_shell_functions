@@ -8,6 +8,6 @@ scd () {
     fi
 #    echo $currDir
     trl 1 $currDir
-    sleep 2
+    sleep 1
   done
 }
