@@ -1,4 +1,4 @@
-cd () {
-  source /usr/bin/cd $1
-  echo `pwd` > ~/.currWorkDir
-}
+# cd () {
+#   source /usr/bin/cd $1
+#   echo `pwd` > ~/.currWorkDir
+# }
