@@ -2,8 +2,12 @@ scd () {
   while [ 1 -eq 1 ]
   do
     clr
-    pwd
-    trl 1
-    sleep 1
+    currDir=`pwd`
+    if [ ! -f "~/.currWorkDir" ]; then
+      currDir=`cat ~/.currWorkDir`
+    fi
+    echo $currDir
+    trl 1 $currDir
+    sleep 2
   done
 }
